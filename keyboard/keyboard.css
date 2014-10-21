@@ -1,0 +1,97 @@
+
+			 
+
+button {width:100%;}
+
+.button-cell {
+  display: inline-block; 
+  padding: 1px 0px; 
+  /* border: 1px red solid; */
+    }
+  
+button:hover {  font-weight: 900;   font-size: 14px;}  
+button:active {  font-weight: 900;   font-size: 12px;}
+
+
+textarea.wide-box {
+   resize: none;
+   overflow: scroll;
+   max-width: 310px;
+   max-height: 180px;	
+	margin: 10px 0 0;}
+
+.keyboard {
+  width:320px;
+
+/*  border: 1px blue solid; */
+}
+
+.button-row {
+  width: 100%;
+  left: auto;
+  right:auto;
+  /* background-color: green; */
+}
+
+div.row-of-three div.button-cell {
+
+  margin:0;	
+	width: 31%;} 
+	
+	div.row-of-one div.button-cell {
+  margin:0;	
+	width: 96%;} 
+	
+	
+div.row-of-two div.button-cell {
+
+  margin:0;	
+	width: 47%;} 
+	
+	
+div.row-of-four div.button-cell {
+
+  margin:0;	
+	width: 22%;} 
+	
+div.row-of-many div.button-cell {
+
+  margin:0;	
+	width: 8.5%;} 
+	
+#keyboard-display1 {  padding:0 0 0 10px !important;}
+
+.keyboard-display {
+  width: 92%;
+  height: 30px;
+  margin:0 0 0 3px !important;
+  border:1px solid black;
+  padding: 0px;
+  margin: 0 0 10px 0;
+   text-align: left;
+  /* direction: rtl; */
+  overflow: scroll; 
+  font-size: 100%;
+  font-weight: normal;
+  
+}
+
+#history > ul {
+  padding: 10px 5px 5px 10px;
+}
+
+#history > ul > li {
+  color: grey;
+  list-style-type: none;
+}
+
+.historyFrame ul {
+
+				border: 1px solid black;
+				width: 90%;
+
+				height: 200px;
+
+				overflow-y: auto;				
+
+			 }
