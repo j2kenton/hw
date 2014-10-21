@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+  
+  
+  
+  <div id="container">
+      <div class="keyboard" id="keyboard">
+        <div class="keyboard-screen">
+          <input class="keyboard-display" id="keyboard-display1" type="text" name="display" disabled />
+        </div>
+        
+        <div class="button-row row-of-three">
+
+          
+          <div class="button-cell">
+            <button id="shift" class="button-wide" type="button" onclick="shift(this)">shift &#8657;</button>
+          </div>
+
+          
+          <div class="button-cell">
+            <button id="cl" class="button-wide" type="button" onclick="clearDisplay()">clear all</button>
+          </div>
+          
+          <div class="button-cell">
+            <button id="bk" class="button-wide" type="button" onclick="backspace()">&#8592; bkspace</button>
+          </div>          
+          
+        </div>
+        
+        <div class="button-row row-of-many">
+          <div class="button-cell">
+            <button id="1" type="button" onclick="addToDisplay(this)">1</button>
+          </div>
+
+<!--
+					alternative way of making the funciton for the add to display, by Asaf, see also note in js file
+					replace the onclick with:   onclick="clicked('1')"  (for button 1)
+-->                 
+          
+          <div class="button-cell">
+            <button id="2" type="button" onclick="addToDisplay(this)">2</button>
+          </div>
+          <div class="button-cell">
+            <button id="3" type="button" onclick="addToDisplay(this)">3</button>
+          </div>
+          <div class="button-cell">
+            <button id="4" type="button" onclick="addToDisplay(this)">4</button>
+          </div>
+          <div class="button-cell">
+            <button id="5" type="button" onclick="addToDisplay(this)">5</button>
+          </div>
+          <div class="button-cell">
+            <button id="6" type="button" onclick="addToDisplay(this)">6</button>
+          </div>
+          <div class="button-cell">
+            <button id="7" type="button" onclick="addToDisplay(this)">7</button>
+          </div>
+          <div class="button-cell">
+            <button id="8" type="button" onclick="addToDisplay(this)">8</button>
+          </div>
+          <div class="button-cell">
+            <button id="9" type="button" onclick="addToDisplay(this)">9</button>
+          </div>
+          <div class="button-cell">
+            <button id="0" type="button" onclick="addToDisplay(this)">0</button>
+          </div>
+        </div>  
+        
+              
+        <div class="button-row row-of-many">
+          <div class="button-cell">
+            <button id="q" type="button" onclick="addToDisplay(this)">q</button>
+          </div>
+          <div class="button-cell">
+            <button id="b8" type="button" onclick="addToDisplay(this)">w</button>
+          </div>
+          <div class="button-cell">
+            <button id="b9" type="button" onclick="addToDisplay(this)">e</button>
+          </div>
+          <div class="button-cell">
+            <button id="b9" type="button" onclick="addToDisplay(this)">r</button>
+          </div>
+          <div class="button-cell">
+            <button id="b9" type="button" onclick="addToDisplay(this)">t</button>
+          </div>
+          <div class="button-cell">
+            <button id="b9" type="button" onclick="addToDisplay(this)">y</button>
+          </div>
+          <div class="button-cell">
+            <button id="b9" type="button" onclick="addToDisplay(this)">u</button>
+          </div>
+          <div class="button-cell">
+            <button id="b9" type="button" onclick="addToDisplay(this)">i</button>
+          </div>
+          <div class="button-cell">
+            <button id="b9" type="button" onclick="addToDisplay(this)">o</button>
+          </div>
+          <div class="button-cell">
+            <button id="b9" type="button" onclick="addToDisplay(this)">p</button>
+          </div>
+        </div>
+
+        <div class="button-row row-of-many">
+          <div class="button-cell">
+            <button id="b4" type="button" onclick="addToDisplay(this)">a</button>
+          </div>
+          <div class="button-cell">
+            <button id="b5" type="button" onclick="addToDisplay(this)">s</button>
+          </div>
+          <div class="button-cell">
+            <button id="b6" type="button" onclick="addToDisplay(this)">d</button>
+          </div>
+          <div class="button-cell">
+            <button id="b4" type="button" onclick="addToDisplay(this)">f</button>
+          </div>
+          <div class="button-cell">
+            <button id="b5" type="button" onclick="addToDisplay(this)">g</button>
+          </div>
+          <div class="button-cell">
+            <button id="b6" type="button" onclick="addToDisplay(this)">h</button>
+          </div>
+          <div class="button-cell">
+            <button id="b4" type="button" onclick="addToDisplay(this)">j</button>
+          </div>
+          <div class="button-cell">
+            <button id="b5" type="button" onclick="addToDisplay(this)">k</button>
+          </div>
+          <div class="button-cell">
+            <button id="b6" type="button" onclick="addToDisplay(this)">l</button>
+          </div>
+          <div class="button-cell">
+            <button id="s-colon" type="button" onclick="addToDisplay(this)">;</button>
+          </div>
+
+        </div>
+        <div class="button-row row-of-many">
+          <div class="button-cell">
+            <button id="b4" type="button" onclick="addToDisplay(this)">z</button>
+          </div>
+          <div class="button-cell">
+            <button id="b5" type="button" onclick="addToDisplay(this)">x</button>
+          </div>
+          <div class="button-cell">
+            <button id="b6" type="button" onclick="addToDisplay(this)">c</button>
+          </div>
+          <div class="button-cell">
+            <button id="b4" type="button" onclick="addToDisplay(this)">v</button>
+          </div>
+          <div class="button-cell">
+            <button id="b5" type="button" onclick="addToDisplay(this)">b</button>
+          </div>
+          <div class="button-cell">
+            <button id="b6" type="button" onclick="addToDisplay(this)">n</button>
+          </div>
+          <div class="button-cell">
+            <button id="b4" type="button" onclick="addToDisplay(this)">m</button>
+          </div>
+          <div class="button-cell">
+            <button id="comma" type="button" onclick="addToDisplay(this)">,</button>
+          </div>
+          <div class="button-cell">
+            <button id="period" type="button" onclick="addToDisplay(this)">.</button>
+          </div>
+          <div class="button-cell">
+            <button id="slash" type="button" onclick="addToDisplay(this)">/</button>
+          </div>
+
+        </div>
+
+
+        
+        <div class="button-row row-of-two">
+          
+          <div class="button-cell">
+            <button id="bk" class="button-very-wide" type="button" onclick="addToDisplay(this)">&nbsp;</button>
+          </div>
+          
+           <div class="button-cell">
+            <button id="bk" class="button-very-wide" type="button" onclick="enterPressed(event)">ENTER &#8629;</button>
+          </div>         
+          
+        </div>
+        
+
+
+	</div>
+	
+        	<textarea id="history" class="wide-box" rows="10" cols="35" class="historyFrame" id="history" disabled ></textarea>
+        
+      </div>
+    </div>
+    
+    
+    
+
+	
+
+
+    <link type="text/css" href="keyboard.css" rel="stylesheet" />
+    <script src="keyboard.js"></script>
+  </body>
+</html>
